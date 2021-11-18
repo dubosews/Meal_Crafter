@@ -13,7 +13,7 @@
 * Tailwind CSS
 
 ## Website
-
+https://dubosews.github.io/Meal_Crafter/
 
 ## Contribution
-Meal Crafter created by
+Meal Crafter created by Wyatt C, Maxwell B, Wesley D, Elizabeth B, and Robert F
