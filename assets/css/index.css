@@ -1,0 +1,13 @@
+* {
+    background-color: azure;
+}
+
+
+#title {
+    background-image: linear-gradient(to right, teal, aqua);
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
