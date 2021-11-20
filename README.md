@@ -1,6 +1,6 @@
 # Meal Crafter
 
-## Meal Crafter
+## Purpose
 
 
 ## Screenshots
