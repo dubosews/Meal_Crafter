@@ -1,14 +1,17 @@
-//MealDB API
-// https://www.themealdb.com/api.php
+
 
 //global variables for DOM elements
-const searchEl = document.querySelector("#search-input"),
+const 
   submitForm = document.querySelector("#submit-form"),
   randomBtn = document.querySelector("#random-btn"),
-  mealsEl = document.querySelector("#meals"),
+  mealsEl = document.querySelector("#meals1"),
   resultHeadingEl = document.querySelector("#result-heading"),
   single_mealEl = document.querySelector("#single-meal");
+  single_mealSmallEl = document.querySelector('#meals2')
 containerEl = document.querySelector("#container");
+
+//MealDB API
+// https://www.themealdb.com/api.php
 
 //seach for meal and fetch from API
 function searchMeal(e) {
@@ -17,9 +20,7 @@ function searchMeal(e) {
   //clear single meal
   single_mealEl.innerHTML = "";
 
-  //get search term
-  const searchTerm = searchEl.value;
-  //   console.log(term)
+  
 
 }
 
@@ -88,7 +89,7 @@ function addMealToDOM(meal) {
     }
   }
 
-  //adding inner HTML to display the image, directions, and ingredients
+  //adding inner HTML to display the image, and ingredients, and save button
   single_mealEl.innerHTML = `
   <div class="justify-center max-w-sm rounded overflow-hidden shadow-lg">
     <h2 class="font-bold text-xl mb-2">${meal.strMeal}</h2>
@@ -103,11 +104,34 @@ function addMealToDOM(meal) {
               .map((ingredient) => `<li>${ingredient}</li>`)
               .join("")}
         </ul>
-    <button class="btn my-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="save">Save</button>    
+    <button class="btn my-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="save-button">Save</button>    
     </div>
     </div>
   </div>
   `;
+//create variable for save button
+var saveBtn = document.querySelector("#save-button");
+//create click event listener when save button is clicked
+saveBtn.addEventListener("click", saveMeal);
+
+//create function to save meal in meal box
+function saveMeal() {
+  single_mealSmallEl.innerHTML = `
+  <div class="justify-center max-w-sm rounded overflow-hidden shadow-lg">
+    <h2 class="font-bold text-xl mb-2">${meal.strMeal}</h2>
+    <div class="px-3 py-2 justify-center"> 
+         ${meal.strCategory ? `<p class="font-light text-md mb-2">${meal.strCategory}</p>` : ""}
+         ${meal.strArea ? `<p class="font-light text-md mb-2">${meal.strArea}</p>` : ""}
+   
+    </div>    
+    </div>
+  `;
+
+  }
+
+
+
+
 }
 
 //add event listeners
@@ -136,3 +160,5 @@ mealsEl.addEventListener("click", (e) => {
     getMealByID(mealID);
   }
 });
+
+
