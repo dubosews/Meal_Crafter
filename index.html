@@ -14,54 +14,68 @@
 </head>
 <!-- header -->
 <body>
-    <header id="title" class="container-fluid m-0 mx-auto px-6 py-2 flex justify-center items-center rounded-md">
+    <header id="title" class="fixed top-0 h-12 left-0 w-full z-50 container-fluid m-0 mx-auto px-6 py-2 flex justify-center items-center rounded-md">
         <h1 class="font-bold text-white text-2xl lg:text-4xl bg-transparent">Meal Crafter</h1>
     </header>
 
 <!-- main section below header-->
-<div class="h-screen">
-
-            <!-- day of the week -->
-            <div id="day-title" class="p-6 grid grid-cols-7 gap-4 text-center text-lg text-white">
-                <div class="bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Monday</div>
-                <div class="bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Tuesday</div>
-                <div class="bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Wednesday</div>
-                <div class="bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Thursday</div>
-                <div class="bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Friday</div>
-                <div class="col-span-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-md">Meals</div>
-            </div>
+<div class="relative overflow-x-auto ">
 
             <!-- grid layout of breakfast, lunch, and dinner for the day of the week -->
-            <div class="h-screen p-6 grid grid-cols-7 pt-0 space-x-2 overflow-x-auto">
+            <div class="p-6 mr-60 mt-8 grid grid-rows-5 gap-4">
 
-                <div id="monday" class=" bg-gray-300 p-1 grid grid-rows-3">
-                    <span id="breakfast" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Breakfast</span>
-                    <span id="lunch" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Lunch</span>
-                    <span id="dinner" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Dinner</span>
+                <div id="monday" class="mt-10 bg-gray-300 p-1 rounded-md">
+                    <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Monday</div>
+                        <div class="mt-10 bg-gray-300">
+                            <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Breakfast</span>
+                            <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Lunch</span>
+                            <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Dinner</span>
+                        </div>
                 </div>
-                <div id="tuesday" class=" bg-gray-300 p-1 grid grid-rows-3">
-                    <span id="breakfast" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Breakfast</span>
-                    <span id="lunch" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Lunch</span>
-                    <span id="dinner" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Dinner</span>
+
+                <div id="tuesday" class="mt-10 bg-gray-300 p-1 rounded-md">
+                    <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Tuesday</div>
+                        <div class="mt-10 bg-gray-300">
+                            <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Breakfast</span>
+                            <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Lunch</span>
+                            <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Dinner</span>
+                        </div>
                 </div>
-                <div id="wednesday" class=" bg-gray-300 p-1 grid grid-rows-3">
-                    <span id="breakfast" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Breakfast</span>
-                    <span id="lunch" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Lunch</span>
-                    <span id="dinner" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Dinner</span>
+
+                <div id="wednesday" class="mt-10 bg-gray-300 p-1 rounded-md">
+                    <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Wednesday</div>
+                        <div class="mt-10 bg-gray-300">
+                            <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Breakfast</span>
+                            <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Lunch</span>
+                            <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Dinner</span>
+                        </div>
                 </div>
-                <div id="thursday" class=" bg-gray-300 p-1 grid grid-rows-3">
-                    <span id="breakfast" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Breakfast</span>
-                    <span id="lunch" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Lunch</span>
-                    <span id="dinner" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Dinner</span>
+
+                <div id="thursday" class="mt-10 bg-gray-300 p-1 rounded-md">
+                    <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Thursday</div>
+                        <div class="mt-10 bg-gray-300">
+                            <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Breakfast</span>
+                            <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Lunch</span>
+                            <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Dinner</span>
+                        </div>
                 </div>
-                <div id="friday" class=" bg-gray-300 p-1 grid grid-rows-3">
-                    <span id="breakfast" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Breakfast</span>
-                    <span id="lunch" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Lunch</span>
-                    <span id="dinner" class="m-1 block bg-gray-300 text-center underline border-2 border-black">Dinner</span>
+
+                <div id="friday" class="mt-10 bg-gray-300 p-1 rounded-md">
+                    <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Friday</div>
+                        <div class="mt-10 bg-gray-300">
+                            <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Breakfast</span>
+                            <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Lunch</span>
+                            <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Dinner</span>
+                        </div>
                 </div>
+
+                
 
                 <!-- meals section -->
-                <div id="meals" class="sticky bg-gray-300 p-1 col-span-2 border-2 border-black"></div>
+                
+                <div id="meals" style="height: calc(95vh - 56px);" class="fixed top-24 right-0 h-full w-64 bg-gray-300 p-2 col-span-2 border-2 border-black rounded-md">
+                    <div class="p-2 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Meals</div>
+                </div>
 
             </div>
 
