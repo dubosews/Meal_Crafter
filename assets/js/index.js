@@ -93,13 +93,13 @@ function addMealToDOM(meal) {
   single_mealEl.innerHTML = `
   <div class="justify-center max-w-sm rounded overflow-hidden shadow-lg">
     <h2 class="font-bold text-xl mb-2">${meal.strMeal}</h2>
-    <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
+    <img class="transform scale-100" src="${meal.strMealThumb}" alt="${meal.strMeal}" />
     <div class="px-6 py-4 justify-center"> 
          ${meal.strCategory ? `<p class="font-light text-md mb-2">${meal.strCategory}</p>` : ""}
          ${meal.strArea ? `<p class="font-light text-md mb-2">${meal.strArea}</p>` : ""}
    
     <h3 class="font-bold text-xl mb-2">Ingredients</h2>
-         <ul>
+         <ul class="text-xs">
             ${ingredients
               .map((ingredient) => `<li>${ingredient}</li>`)
               .join("")}
@@ -123,11 +123,10 @@ saveBtn.addEventListener("click", saveMeal);
 function saveMeal() {
   
   single_mealSmallEl.innerHTML = `
-  <div class="justify-center max-w-sm rounded overflow-hidden shadow-lg">
+  <div class="flex space-x-4 rounded overflow-hidden shadow-lg">
     <h2 class="font-bold text-xl mb-2">${meal.strMeal}</h2>
+    <img class="object-cover h-48 w-full" src="${meal.strMealThumb}" alt="${meal.strMeal}" />
     <div class="px-3 py-2 justify-center"> 
-         ${meal.strCategory ? `<p class="font-light text-md mb-2">${meal.strCategory}</p>` : ""}
-         ${meal.strArea ? `<p class="font-light text-md mb-2">${meal.strArea}</p>` : ""}
          <button class="btn modal-open my-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="one">Expand</button> 
          </div>    
     </div>
