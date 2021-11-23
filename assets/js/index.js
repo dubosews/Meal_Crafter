@@ -109,6 +109,8 @@ function addMealToDOM(meal) {
     </div>
   </div>
   `;
+
+
 //create variable for save button
 var saveBtn = document.querySelector("#save-button");
 //create click event listener when save button is clicked
@@ -122,18 +124,13 @@ function saveMeal() {
     <div class="px-3 py-2 justify-center"> 
          ${meal.strCategory ? `<p class="font-light text-md mb-2">${meal.strCategory}</p>` : ""}
          ${meal.strArea ? `<p class="font-light text-md mb-2">${meal.strArea}</p>` : ""}
-   
-    </div>    
+         <button class="btn modal-open my-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Expand</button> 
+         </div>    
     </div>
+    
   `;
 
   }
-
-
-
-
-}
-
 
 // modal section
 var openmodal = document.querySelectorAll('.modal-open')
@@ -173,6 +170,10 @@ var openmodal = document.querySelectorAll('.modal-open')
       modal.classList.toggle('pointer-events-none')
       body.classList.toggle('modal-active')
     }
+
+
+
+}
 
 
 
