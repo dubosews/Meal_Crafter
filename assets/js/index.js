@@ -132,13 +132,13 @@ function addMealToDOM(meal) {
   single_mealEl.innerHTML = `
   <div class="justify-center max-w-sm rounded overflow-hidden shadow-lg">
     <h2 class="font-bold text-xl mb-2">${meal.strMeal}</h2>
-    <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
+    <img class="transform scale-100" src="${meal.strMealThumb}" alt="${meal.strMeal}" />
     <div class="px-6 py-4 justify-center"> 
          ${meal.strCategory ? `<p class="font-light text-md mb-2">${meal.strCategory}</p>` : ""}
          ${meal.strArea ? `<p class="font-light text-md mb-2">${meal.strArea}</p>` : ""}
    
     <h3 class="font-bold text-xl mb-2">Ingredients</h2>
-         <ul>
+         <ul class="text-xs">
             ${ingredients
               .map((ingredient) => `<li>${ingredient}</li>`)
               .join("")}
@@ -150,6 +150,9 @@ function addMealToDOM(meal) {
   `;
 
 
+
+
+
 //create variable for save button
 var saveBtn = document.querySelector("#save-button");
 //create click event listener when save button is clicked
@@ -157,21 +160,70 @@ saveBtn.addEventListener("click", saveMeal);
 
 //create function to save meal in meal box
 function saveMeal() {
+  
   single_mealSmallEl.innerHTML = `
-  <div class="justify-center max-w-sm rounded overflow-hidden shadow-lg">
+  <div class="flex space-x-4 rounded overflow-hidden shadow-lg">
     <h2 class="font-bold text-xl mb-2">${meal.strMeal}</h2>
+    <img class="object-cover h-48 w-full" src="${meal.strMealThumb}" alt="${meal.strMeal}" />
     <div class="px-3 py-2 justify-center"> 
+<<<<<<< HEAD
          ${meal.strCategory ? `<p class="font-light text-md mb-2">${meal.strCategory}</p>` : ""}
          ${meal.strArea ? `<p class="font-light text-md mb-2">${meal.strArea}</p>` : ""}
          <button class="modal-open btn my-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Expand</button> 
+=======
+         <button class="btn modal-open my-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="one">Expand</button> 
+>>>>>>> 64c1b4df1eed69f832aa5db4fa18f5826dd25f15
          </div>    
     </div>
     
   `;
-
+  var modalBtn = document.querySelector('.modal-open')
+  modalBtn.addEventListener("click", toggleModal);
   }
 
-
+<<<<<<< HEAD
+=======
+// modal section
+var openmodal = document.querySelectorAll('.modal-open')
+    for (var i = 0; i < openmodal.length; i++) {
+      openmodal[i].addEventListener('click', function(event){
+    	event.preventDefault()
+    	toggleModal()
+      })
+    }
+    
+    const overlay = document.querySelector('.modal-overlay')
+    overlay.addEventListener('click', toggleModal)
+    
+    var closemodal = document.querySelectorAll('.modal-close')
+    for (var i = 0; i < closemodal.length; i++) {
+      closemodal[i].addEventListener('click', toggleModal)
+    }
+    
+    document.onkeydown = function(evt) {
+      evt = evt || window.event
+      var isEscape = false
+      if ("key" in evt) {
+    	isEscape = (evt.key === "Escape" || evt.key === "Esc")
+      } else {
+    	isEscape = (evt.keyCode === 27)
+      }
+      if (isEscape && document.body.classList.contains('modal-active')) {
+    	toggleModal()
+      }
+    };
+    
+    
+    function toggleModal (e) {
+      console.log(e.target.id);
+      const body = document.querySelector('body')
+      const modal = document.querySelector('.modal')
+      modal.classList.toggle('opacity-0')
+      modal.classList.toggle('pointer-events-none')
+      body.classList.toggle('modal-active')
+    
+    }
+>>>>>>> 64c1b4df1eed69f832aa5db4fa18f5826dd25f15
 
 
 }
