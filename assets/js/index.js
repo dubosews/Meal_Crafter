@@ -110,6 +110,7 @@ function addMealToDOM(meal) {
   `;
 }
 
+
 // modal section
 var openmodal = document.querySelectorAll('.modal-open')
     for (var i = 0; i < openmodal.length; i++) {
@@ -148,6 +149,8 @@ var openmodal = document.querySelectorAll('.modal-open')
       modal.classList.toggle('pointer-events-none')
       body.classList.toggle('modal-active')
     }
+
+=======
 
 //add event listeners
 //action to complete when the form is submitted

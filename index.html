@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
-    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/index.css">
     <title>Meal Crafter</title>
 </head>
+
 <!-- header -->
 <body>
     <header id="title" class="fixed top-0 h-12 left-0 w-full z-50 container-fluid m-0 mx-auto px-6 py-2 flex justify-center items-center rounded-md">
         <h1 class="font-bold text-white text-2xl lg:text-4xl bg-transparent">Meal Crafter</h1>
     </header>
 
-<!-- main section below header-->
-<div class="relative overflow-x-auto ">
+    <!-- main section below header-->
+    <div class="relative overflow-x-auto ">
 
             <!-- grid layout of breakfast, lunch, and dinner for the day of the week -->
             <div class="p-6 mr-60 mt-8 grid grid-rows-5 gap-4">
@@ -99,7 +102,25 @@
                 </div>
             </div>
 
-</div>
+    </div>
+
+
+    <div class="flex justify-center">
+        <form id="submit-form">
+
+            <button class="btn py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                id="random-btn">
+                Find A Meal
+            </button>
+
+        </form>
+    </div>
+    <div class="p-10 flex justify-center" id="meal-card">
+        <div id="result-heading"></div>
+        <div id="meals"></div>
+        <div id="single-meal"></div>
+    </div>
+
 
 <!-- modal -->
 
@@ -151,4 +172,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
+
 </html>
