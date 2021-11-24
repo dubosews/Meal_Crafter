@@ -208,3 +208,4 @@ mealsEl.addEventListener("click", (e) => {
     getMealByID(mealID);
   }
 });
+
