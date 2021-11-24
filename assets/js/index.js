@@ -1,5 +1,3 @@
-
-
 //global variables for DOM elements
 const 
   submitForm = document.querySelector("#submit-form"),
@@ -19,9 +17,6 @@ function searchMeal(e) {
 
   //clear single meal
   single_mealEl.innerHTML = "";
-
-  
-
 }
 
 //remove error message
@@ -98,7 +93,6 @@ var openmodal = document.querySelectorAll('.modal-open')
       }
     };
     
-    
     function toggleModal () {
       const body = document.querySelector('body')
       const modal = document.querySelector('.modal')
@@ -149,10 +143,6 @@ function addMealToDOM(meal) {
   </div>
   `;
 
-
-
-
-
 //create variable for save button
 var saveBtn = document.querySelector("#save-button");
 //create click event listener when save button is clicked
@@ -171,17 +161,11 @@ function saveMeal() {
          <button class="modal-open btn my-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Expand</button> 
          </div>    
     </div>
-    
   `;
   var modalBtn = document.querySelector('.modal-open')
   modalBtn.addEventListener("click", toggleModal);
   }
-
-
-
 }
-
-
 
 //add event listeners
 //action to complete when the form is submitted
@@ -209,5 +193,3 @@ mealsEl.addEventListener("click", (e) => {
     getMealByID(mealID);
   }
 });
-
-
