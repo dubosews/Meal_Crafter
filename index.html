@@ -39,16 +39,18 @@
         <div class="p-6 mr-60 mt-8 grid grid-rows-5 gap-4">
 
             <!-- meal list div -->
-            <div class="h-120 bg-gray-300 p-1 mt-10 col-span-2 border-2 border-black">
+            <div class="h-120 bg-gray-300 p-1 mt-10 col-span-2 border-2 border-black" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Saved Meals</div>
-                <ul id="meals2"></ul>
+                <ul id="meals2" draggable="true" ondragstart="drag(event)"></ul>
             </div>
 
             <!-- monday -->
             <div id="monday" class="mt-10 bg-gray-300 p-1 rounded-md">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Monday</div>
                     <div class="mt-10 bg-gray-300">
-                        <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Breakfast</span>
+                        <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Breakfast
+                            <div ondrop="drop(event)" ondragover="allowDrop(event)"> + Meal </div>
+                        </span>
                         <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Lunch</span>
                         <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Dinner</span>
                     </div>
@@ -156,7 +158,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="assets/js/index.js"></script>
-    <script src="assets/js/dragdrop.js"></script>
 </body>
 
 </html>
