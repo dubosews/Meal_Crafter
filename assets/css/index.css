@@ -2,7 +2,6 @@
     background-color: rgb(87, 87, 87);
 }
 
-
 #title {
     background-image: linear-gradient(to right, teal, aqua);
 }
@@ -15,7 +14,6 @@ body.modal-active {
     overflow-x: hidden;
     overflow-y: visible !important;
 }
-
 
 @tailwind base;
 @tailwind components;
