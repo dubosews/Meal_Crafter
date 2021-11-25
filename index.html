@@ -16,15 +16,15 @@
 </head>
 
 <!-- header -->
-<body>
-    <header id="title" class="fixed top-0 h-12 left-0 w-full z-10 container-fluid m-0 mx-auto px-6 py-2 flex justify-center items-center rounded-md">
+<body class="bg-gray-700">
+    <header id="title" class="fixed top-0 h-14 left-0 w-full z-10 container-fluid m-0 mx-auto px-6 py-2 flex rounded-md">
         <h1 class="font-bold text-white text-2xl lg:text-4xl bg-transparent">Meal Crafter</h1>
     </header>
 
     <div class="fixed top-0 h-12 left-0 w-full bg-opacity-0 bg-transparent z-20 mt-2 pr-16 container-fluid mx-auto px-6 py-2 flex justify-end items-end">
       <form id="submit-form" class="rounded-full">
 
-          <button class="btn pl-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+          <button class="btn pl-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-full"
               id="random-btn">
               Find A Meal
           </button>
@@ -39,7 +39,7 @@
         <div class="p-6 mr-60 mt-8 grid grid-rows-5 gap-4">
 
             <!-- meal list div -->
-            <div class="h-120 bg-gray-300 p-1 mt-10 col-span-2 border-2 border-black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="h-120 bg-gray-300 p-1 mt-10 col-span-2 border-black" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Saved Meals</div>
                 <ul class="z-40" id="meals2" draggable="true" ondragstart="drag(event)"></ul>
             </div>
@@ -47,19 +47,15 @@
             <!-- monday -->
             <div id="monday" class="mt-10 bg-gray-300 p-1 rounded-md">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Monday</div>
-                    <div class="mt-10 bg-gray-300">
-                        <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Breakfast
-<<<<<<< HEAD
-                            <div class=" z-0 h-24 m-22 block bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-=======
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                    <div class=" bg-gray-300">
+                        <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Breakfast
+                            <div class="z-0 h-24 m-22 block bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
-                        <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Lunch
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                        <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Lunch
+                            <div class="z-0 h-24 m-22 block bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
-                        <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Dinner
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
->>>>>>> 08190bd9cac5d3f125b2fe828d11b175572fcf6b
+                        <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Dinner
+                            <div class="z-0 h-24 m-22 block bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                     </div>
             </div>
@@ -67,15 +63,15 @@
             <!-- tuesday -->
             <div id="tuesday" class="mt-10 bg-gray-300 p-1 rounded-md">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Tuesday</div>
-                    <div class="mt-10 bg-gray-300">
-                        <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Breakfast
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                    <div class=" bg-gray-300">
+                        <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Breakfast
+                            <div class="z-0 h-24 m-22 block bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
-                        <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Lunch
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                        <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Lunch
+                            <div class="z-0 h-24 m-22 block bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
-                        <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Dinner
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                        <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Dinner
+                            <div class="z-0 h-24 m-22 block bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                     </div>
             </div>
@@ -83,15 +79,15 @@
             <!-- wednesday -->
             <div id="wednesday" class="mt-10 bg-gray-300 p-1 rounded-md">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Wednesday</div>
-                    <div class="mt-10 bg-gray-300">
-                        <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Breakfast
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                    <div class=" bg-gray-300">
+                        <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Breakfast
+                            <div class="z-0 h-24 m-22 block bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
-                        <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Lunch
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                        <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Lunch
+                            <div class="z-0 h-24 m-22 block bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
-                        <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Dinner
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                        <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Dinner
+                            <div class="z-0 h-24 m-22 block bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                     </div>
             </div>
@@ -99,15 +95,15 @@
             <!-- thursday -->
             <div id="thursday" class="mt-10 bg-gray-300 p-1 rounded-md">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Thursday</div>
-                    <div class="mt-10 bg-gray-300">
-                        <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Breakfast
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                    <div class=" bg-gray-300">
+                        <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Breakfast
+                            <div class="z-0 h-24 m-22 block bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
-                        <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Lunch
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                        <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Lunch
+                            <div class="z-0 h-24 m-22 block bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
-                        <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Dinner
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                        <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Dinner
+                            <div class="z-0 h-24 m-22 block bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>    
                     </div>
             </div>
@@ -115,22 +111,22 @@
             <!-- friday -->
             <div id="friday" class="mt-10 bg-gray-300 p-1 rounded-md">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Friday</div>
-                    <div class="mt-10 bg-gray-300">
-                        <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Breakfast
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                    <div class=" bg-gray-300">
+                        <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Breakfast
+                            <div class="z-0 h-24 m-22 block bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
-                        <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Lunch
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                        <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Lunch
+                            <div class="z-0 h-24 m-22 block bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
-                        <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Dinner
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: rgba(68, 68, 68, 0.493); padding: 2px; border-radius: 20px; height: fit-content;"> + Meal </div>
+                        <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Dinner
+                            <div class="z-0 h-24 m-22 block bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                     </div>
             </div> 
                 
 
             <!-- meals section -->
-            <div id="meals" style="height: calc(95vh - 56px);" class="fixed overflow-y-scroll top-24 right-0 h-full w-64 bg-gray-300 p-2 col-span-2 border-2 border-black rounded-md">
+            <div id="meals" style="height: calc(95vh - 56px);" class="fixed overflow-y-scroll top-24 right-0 h-full w-64 bg-gray-300 p-2 col-span-2 border-black rounded-md">
                 <div class="p-2 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Meals</div>
                 <!-- find a meal button -->
                 <div id="meal-card">
