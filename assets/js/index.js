@@ -124,7 +124,7 @@ function addMealToDOM(meal) {
 
   //adding inner HTML to display the image, and ingredients, and save button
   single_mealEl.innerHTML = `
-  <div class="justify-center max-w-sm rounded overflow-hidden shadow-lg">
+  <div class="justify-center rounded-lg overflow-hidden shadow-lg py-3">
     <h2 class="font-bold text-xl mb-2">${meal.strMeal}</h2>
     <img class="transform scale-100" src="${meal.strMealThumb}" alt="${meal.strMeal}" />
     <div class="px-6 py-4 justify-center"> 
@@ -137,7 +137,7 @@ function addMealToDOM(meal) {
               .map((ingredient) => `<li>${ingredient}</li>`)
               .join("")}
         </ul>
-    <button class="btn my-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="save-button">Save</button>    
+    <button class="btn my-4 py-4 bg-green-500 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full" id="save-button">Save</button>    
     </div>
     </div>
   </div>
