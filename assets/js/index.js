@@ -124,7 +124,7 @@ function addMealToDOM(meal) {
 
   //adding inner HTML to display the image, and ingredients, and save button
   single_mealEl.innerHTML = `
-  <div class="justify-center max-w-sm rounded overflow-hidden shadow-lg">
+  <div class="justify-center rounded-lg overflow-hidden shadow-lg py-3 bg-gray-200">
     <h2 class="font-bold text-xl mb-2">${meal.strMeal}</h2>
     <img class="transform scale-100" src="${meal.strMealThumb}" alt="${meal.strMeal}" />
     <div class="px-6 py-4 justify-center"> 
@@ -137,7 +137,7 @@ function addMealToDOM(meal) {
               .map((ingredient) => `<li>${ingredient}</li>`)
               .join("")}
         </ul>
-    <button class="btn my-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" id="save-button">Save</button>    
+    <button class="btn pl-4 border-2 border-white bg-green-300 hover:bg-gray-700 text-white font-bold mx-8 my-6 py-1 px-4 rounded-full" id="save-button">Save</button>    
     </div>
     </div>
   </div>
@@ -154,11 +154,12 @@ function saveMeal() {
   single_mealSmallEl.innerHTML = `
   <div class="flex space-x-4 rounded overflow-hidden shadow-lg">
     <h2 class="font-bold text-xl mb-2">${meal.strMeal}</h2>
-    <img class="object-cover h-48 w-full" src="${meal.strMealThumb}" alt="${meal.strMeal}" />
+    <button class="btn pl-4 border-2 border-white bg-green-300 hover:bg-gray-700 text-white font-bold mx-8 my-6 py-1 px-2 rounded-full">Expand</button>
+    <img class="object-cover h-24 w-full" src="${meal.strMealThumb}" alt="${meal.strMeal}" />
     <div class="px-3 py-2 justify-center"> 
          ${meal.strCategory ? `<p class="font-light text-md mb-2">${meal.strCategory}</p>` : ""}
          ${meal.strArea ? `<p class="font-light text-md mb-2">${meal.strArea}</p>` : ""}
-         <button class="modal-open btn my-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Expand</button> 
+          
          </div>    
     </div>
   `;
