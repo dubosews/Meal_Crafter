@@ -7,8 +7,8 @@ Our app, Meal Crafter, is a 5-day meal planner. This app allows for the consumer
 Meal Crafter is a 5 day meal planner with ingredients for any consumer. We used HTML, CSS, JavaScript, Tailwind CSS, TheMealDB API, and HTML Drag and Drop API to create this website. We started with a basic wireframe to create the layout of the website. We used the wireframe along with Tailwind CSS to create the basic HTML outline for our website. After using Tailwind CSS to format the HTML, we started to code the JavaScript with the help of TheMealDB API and HTML Drag and Drop API. The APIs allows our consumer to find a random meal and drag and drop it to the specific meal time and weekday that they want to cook the meal on. Additionally, we have added the function of local storage, so that the consumer can always come back and look at the meal plan they created.  
 
 ## Screenshots
-![Screenshot #1](https://github.com/dubosews/meal_crafter/blob/main/media/images/screenshot1.png)
-![Screenshot #2](https://github.com/dubosews/meal_crafter/blob/main/media/images/screenshot2.png)
+![Screenshot #1](https://github.com/dubosews/meal_crafter/blob/main/assets/media/screenshot1.png)
+![Screenshot #2](https://github.com/dubosews/meal_crafter/blob/main/assets/media/screenshot2.png)
 
 ## Built With
 * HTML
