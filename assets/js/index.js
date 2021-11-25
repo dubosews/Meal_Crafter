@@ -154,7 +154,7 @@ function saveMeal() {
   single_mealSmallEl.innerHTML = `
   <div class="flex space-x-4 rounded overflow-hidden shadow-lg">
     <h2 class="font-bold text-xl mb-2">${meal.strMeal}</h2>
-    <button class="btn pl-4 border-2 border-white bg-green-300 hover:bg-gray-700 text-white font-bold mx-8 my-6 py-1 px-4 rounded-full">Expand</button>
+    <button class="btn pl-4 border-2 border-white bg-green-300 hover:bg-gray-700 text-white font-bold mx-8 my-6 py-1 px-2 rounded-full">Expand</button>
     <img class="object-cover h-24 w-full" src="${meal.strMealThumb}" alt="${meal.strMeal}" />
     <div class="px-3 py-2 justify-center"> 
          ${meal.strCategory ? `<p class="font-light text-md mb-2">${meal.strCategory}</p>` : ""}
