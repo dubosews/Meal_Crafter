@@ -41,7 +41,7 @@
             <!-- meal list div -->
             <div class="h-120 bg-gray-300 p-1 mt-10 col-span-2 border-2 border-black" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Saved Meals</div>
-                <ul id="meals2" draggable="true" ondragstart="drag(event)"></ul>
+                <ul class="z-40" id="meals2" draggable="true" ondragstart="drag(event)"></ul>
             </div>
 
             <!-- monday -->
@@ -49,7 +49,7 @@
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Monday</div>
                     <div class="mt-10 bg-gray-300">
                         <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Breakfast
-                            <div ondrop="drop(event)" ondragover="allowDrop(event)"> + Meal </div>
+                            <div class=" z-0 h-24 m-22 block bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                         <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Lunch</span>
                         <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-2 border-black">Dinner</span>
@@ -107,7 +107,7 @@
                     <div id="single-meal"></div>
                 </div>
                 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <img src="assets/media/Meal_Crafter_icon.svg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+                    <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31"></p>
                 </div>
                 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>

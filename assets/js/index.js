@@ -154,11 +154,12 @@ function saveMeal() {
   single_mealSmallEl.innerHTML = `
   <div class="flex space-x-4 rounded overflow-hidden shadow-lg">
     <h2 class="font-bold text-xl mb-2">${meal.strMeal}</h2>
-    <img class="object-cover h-48 w-full" src="${meal.strMealThumb}" alt="${meal.strMeal}" />
+    <button class="modal-open flex btn my-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Expand</button>
+    <img class="object-cover h-24 w-full" src="${meal.strMealThumb}" alt="${meal.strMeal}" />
     <div class="px-3 py-2 justify-center"> 
          ${meal.strCategory ? `<p class="font-light text-md mb-2">${meal.strCategory}</p>` : ""}
          ${meal.strArea ? `<p class="font-light text-md mb-2">${meal.strArea}</p>` : ""}
-         <button class="modal-open btn my-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Expand</button> 
+          
          </div>    
     </div>
   `;
