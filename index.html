@@ -17,14 +17,15 @@
 
 <!-- header -->
 <body class="bg-gray-700">
-    <header id="title" class="fixed top-0 h-14 left-0 w-full z-10 container-fluid m-0 mx-auto px-6 py-2 flex rounded-md">
+    <header id="title" class="fixed top-0 h-14 left-0 w-full z-10 container-fluid m-0 mx-auto px-6 py-2 flex rounded-md filter drop-shadow-md">
         <h1 class="font-bold text-white text-2xl lg:text-4xl bg-transparent">Meal Crafter</h1>
+        <h2 class="text-white italic text-lg lg:text-lg bg-transparent px-4 py-2">Plan your meals today, tomorrow, or any day!</h2>
     </header>
 
-    <div class="fixed top-0 h-12 left-0 w-full bg-opacity-0 bg-transparent z-20 mt-2 pr-16 container-fluid mx-auto px-6 py-2 flex justify-end items-end">
+    <div class="fixed top-.5 h-12 left-0 w-full bg-opacity-0 bg-transparent filter drop-shadow-md z-20 mt-2 pr-16 container-fluid mx-auto px-6 py-2 flex justify-end items-end">
       <form id="submit-form" class="rounded-full">
 
-          <button class="btn pl-4 py-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-full"
+          <button class="btn pl-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-full"
               id="random-btn">
               Find A Meal
           </button>
@@ -39,87 +40,87 @@
         <div class="p-6 mr-60 mt-8 grid grid-rows-5 gap-4">
 
             <!-- meal list div -->
-            <div class="h-120 bg-gray-300 p-1 mt-10 col-span-2 border-black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="h-120 bg-gray-300 p-1 mt-10 col-span-2 border-black rounded-lg filter drop-shadow-lg" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Saved Meals</div>
                 <ul class="z-40" id="meals2" draggable="true" ondragstart="drag(event)"></ul>
             </div>
 
             <!-- monday -->
-            <div id="monday" class="mt-10 bg-gray-300 p-1 rounded-md">
+            <div id="monday" class="mt-10 bg-gray-300 p-1 rounded-lg filter drop-shadow-lg">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Monday</div>
                     <div class=" bg-gray-300">
                         <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Breakfast
-                            <div class="z-0 h-24 m-22 block bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                         <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Lunch
-                            <div class="z-0 h-24 m-22 block bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                         <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Dinner
-                            <div class="z-0 h-24 m-22 block bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                     </div>
             </div>
 
             <!-- tuesday -->
-            <div id="tuesday" class="mt-10 bg-gray-300 p-1 rounded-md">
+            <div id="tuesday" class="mt-10 bg-gray-300 p-1 rounded-lg filter drop-shadow-lg">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Tuesday</div>
                     <div class=" bg-gray-300">
                         <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Breakfast
-                            <div class="z-0 h-24 m-22 block bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                         <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Lunch
-                            <div class="z-0 h-24 m-22 block bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                         <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Dinner
-                            <div class="z-0 h-24 m-22 block bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                     </div>
             </div>
 
             <!-- wednesday -->
-            <div id="wednesday" class="mt-10 bg-gray-300 p-1 rounded-md">
+            <div id="wednesday" class="mt-10 bg-gray-300 p-1 rounded-lg filter drop-shadow-lg">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Wednesday</div>
                     <div class=" bg-gray-300">
                         <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Breakfast
-                            <div class="z-0 h-24 m-22 block bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                         <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Lunch
-                            <div class="z-0 h-24 m-22 block bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                         <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Dinner
-                            <div class="z-0 h-24 m-22 block bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                     </div>
             </div>
 
             <!-- thursday -->
-            <div id="thursday" class="mt-10 bg-gray-300 p-1 rounded-md">
+            <div id="thursday" class="mt-10 bg-gray-300 p-1 rounded-lg filter drop-shadow-lg">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Thursday</div>
                     <div class=" bg-gray-300">
                         <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Breakfast
-                            <div class="z-0 h-24 m-22 block bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                         <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Lunch
-                            <div class="z-0 h-24 m-22 block bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                         <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Dinner
-                            <div class="z-0 h-24 m-22 block bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>    
                     </div>
             </div>
 
             <!-- friday -->
-            <div id="friday" class="mt-10 bg-gray-300 p-1 rounded-md">
+            <div id="friday" class="mt-10 bg-gray-300 p-1 rounded-lg filter drop-shadow-lg">
                 <div class="h-16 p-3 text-center text-2xl text-white bg-gradient-to-r from-green-400 to to-blue-500 rounded-md">Friday</div>
                     <div class=" bg-gray-300">
                         <span id="breakfast" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Breakfast
-                            <div class="z-0 h-24 m-22 block bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-400 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                         <span id="lunch" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Lunch
-                            <div class="z-0 h-24 m-22 block bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-500 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                         <span id="dinner" class="h-32 m-2 block bg-gray-300 text-center underline border-black">Dinner
-                            <div class="z-0 h-24 m-22 block bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="z-0 h-24 m-22 block rounded-lg filter drop-shadow-lg bg-gray-600 text-center  border-1 border-black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </span>
                     </div>
             </div> 
