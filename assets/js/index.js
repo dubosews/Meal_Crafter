@@ -166,6 +166,7 @@ function saveMeal() {
   var modalBtn = document.querySelector('.modal-open')
   modalBtn.addEventListener("click", toggleModal);
   }
+  
 }
 
 //add drag and drop functionality
